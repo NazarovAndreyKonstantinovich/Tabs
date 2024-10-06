@@ -1,0 +1,108 @@
+/* BEGIN (write your solution here) */
+a[data-tab] {
+ 
+}
+
+div[data-tab-content] {
+  
+}
+/* END */
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+
+  color: #eee;
+
+  /* BEGIN (write your solution here) */
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+  /* END */
+
+  background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
+}
+
+img {
+  max-width: 100%;
+
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+ 
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  color: #00adb5;
+  font-size: 1.5em;
+}
+
+.tabs {
+  width: 1024px;
+  margin: 0 auto;
+
+  /* BEGIN (write your solution here) */
+  
+
+  /* END */
+}
+
+/* BEGIN (write your solution here) */
+.tab-name {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background: #00adb5;
+  display: inline-block;
+  width: 33.3333%; 
+  box-sizing: border-box;
+  
+ 
+}
+
+.tab-name:hover    {
+border-bottom: 3px solid #5ffbf1;
+  
+}
+
+
+
+
+.tabs-content {
+  column-count: 3;
+  column-gap: 30px;
+  background: #393e46;
+}
+/* END */
+
+.span-all {
+  column-span: all;
+}
+
+.tabs-content-item {
+  padding: 20px;
+  display: none;
+}
+
+[data-tab="html"]:hover ~ .tabs-content > [data-tab-content="html"].tabs-content-item  {
+display: block;
+  }
+
+[data-tab="css"]:hover ~ .tabs-content > [data-tab-content="css"].tabs-content-item  {
+display: block;
+  }
+
+[data-tab="js"]:hover ~ .tabs-content > [data-tab-content="js"].tabs-content-item  {
+display: block;
+  }
+
+
